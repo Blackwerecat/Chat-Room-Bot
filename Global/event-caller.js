@@ -9,7 +9,7 @@ var EVENTS = {events:{},
 		}
 	},
 	unbind:function(event,index) {
-		this.events[event].splice(index,index+1);
+		this.events[event].splice(index,1);
 	},
 	call:function(event,payload) {
 		for (i in this.events[event]) {
