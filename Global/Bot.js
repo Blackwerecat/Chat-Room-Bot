@@ -4,7 +4,7 @@ var Bot = function(init,data,handlers) {
 	this.handlers = handlers;
 	this.init = init;
 	for (var event in handlers) {
-		EVENTS.bind(event,handler);
+		EVENTS.bind(event,handlers[event]);
 	}
 	this.init();
 };
