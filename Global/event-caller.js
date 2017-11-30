@@ -13,6 +13,6 @@ var EVENTS = {events:{},
 	},
 	call:function(event,payload) {
 		for (i in this.events[event]) {
-			setTimeout(function(){EVENTS.events[event][i](payload);},0);
+			EVENTS.events[event][i](payload);
 		}
 	}};
